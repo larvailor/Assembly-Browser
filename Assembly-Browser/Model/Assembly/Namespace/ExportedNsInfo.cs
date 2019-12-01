@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Model.Assembly.Namespace.Types;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Model.Assembly.Namespace
 {
     public class ExportedNsInfo
     {

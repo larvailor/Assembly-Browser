@@ -38,5 +38,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assembly\AssemblyBrowser.cs" />
+    <Compile Include="AssemblyLoader.cs" />
+    <Compile Include="Assembly\Namespace\Types\Members\Field.cs" />
+    <Compile Include="Assembly\Namespace\Types\Members\Method.cs" />
+    <Compile Include="Assembly\Namespace\ExportedNsInfo.cs" />
+    <Compile Include="Assembly\Namespace\Types\Members\Property.cs" />
+    <Compile Include="Assembly\Namespace\Types\ExportedTypeInfo.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
