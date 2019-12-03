@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD12B188-046C-4027-B833-D8575BAEDE8A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>ViewModel</RootNamespace>
-    <AssemblyName>ViewModel</AssemblyName>
+    <ProjectGuid>{31710890-7157-40F5-AFD5-1AE038F4D0C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ViewEmpty</RootNamespace>
+    <AssemblyName>ViewEmpty</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\dll\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -37,22 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{35fab77f-adfc-48cc-ad4f-a88d205d3e50}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="MainView.cs" />
-    <Compile Include="TreeNode.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
