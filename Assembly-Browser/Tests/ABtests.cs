@@ -19,10 +19,10 @@ namespace Tests
         {
             AssemblyBrowser ab = AssemblyLoader.Load(pathToDll());
             Assert.IsTrue(ab.Name.StartsWith("TestAssembly"));
-            Assert.AreEqual(ab.Namespaces.Count, 1);
-            Assert.AreEqual(ab.Namespaces["TestAssembly"].Name, "TestAssembly");
-            Assert.AreEqual(ab.Namespaces["TestAssembly"].Types.Count, 1);
-            Assert.AreEqual(ab.Namespaces["TestAssembly"].Types[0].Name, "TestAssembly.Class1");
+            Assert.AreEqual(ab.Namespaces.Count, 2);
+            Assert.AreEqual(ab.Namespaces["namespace1"].Name, "namespace1");
+            Assert.AreEqual(ab.Namespaces["namespace1"].Types.Count, 1);
+            Assert.AreEqual(ab.Namespaces["namespace1"].Types[0].Name, "namespace1.Class1");
         }
     }
 }
