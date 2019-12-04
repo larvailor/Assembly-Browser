@@ -67,11 +67,11 @@ namespace Model
             string name;
             string type;
             string attributes;
-            foreach (var field in exportedType.GetFields())
+            foreach (var field in exportedType.GetRuntimeFields())
             {
                 name = field.Name;
                 attributes = field.Attributes.ToString();
-                type = field.ReflectedType.Name;
+                type = field.FieldType.Name;
                 fields.Add(new Field(name, attributes, type));
             }
 
@@ -86,7 +86,7 @@ namespace Model
             string name;
             string setMethod;
             string getMethod;
-            foreach (var property in exportedType.GetProperties())
+            foreach (var property in exportedType.GetRuntimeProperties())
             {
                 name = property.Name;
                 setMethod = property.SetMethod != null ? property.SetMethod.ToString() : null;
@@ -106,7 +106,7 @@ namespace Model
             string attributes;
             string returnType;
             string[] parameters;
-            foreach (var method in exportedType.GetMethods())
+            foreach (var method in exportedType.GetRuntimeMethods())
             {
                 name = method.Name;
                 attributes = method.Attributes.ToString();
