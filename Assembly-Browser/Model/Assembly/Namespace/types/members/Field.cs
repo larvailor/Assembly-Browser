@@ -27,7 +27,7 @@ namespace Model.Assembly.Namespace.Types.Members
 
         public override string ToString()
         {
-            return Attributes + " " + Type + " " + Name;
+            return "FIELD:   " + Attributes + " " + Type + " " + Name;
         }
     }
 }

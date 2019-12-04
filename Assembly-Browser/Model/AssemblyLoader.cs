@@ -109,9 +109,30 @@ namespace Model
             foreach (var method in exportedType.GetRuntimeMethods())
             {
                 name = method.Name;
-                attributes = method.Attributes.ToString();
+                var attrs = method.Attributes;
+                string attrsStr = "";
+                if (attrs.HasFlag(MethodAttributes.Public))
+                    attrsStr += "public ";
+                else
+                {
+                    if (attrs.HasFlag(MethodAttributes.Private))
+                        attrsStr += "private ";
+                    else
+                        attrsStr += "protected ";
+                }
+                if (attrs.HasFlag(MethodAttributes.Static))
+                    attrsStr += "static ";
+                if (attrs.HasFlag(MethodAttributes.Virtual))
+                {
+                    if (attrs.HasFlag(MethodAttributes.Abstract))
+                        attrsStr += "abstract ";
+                    else
+                        attrsStr += "virtual ";
+                }
+
+                attributes = attrsStr;
                 returnType = method.ReturnType.Name;
-                parameters = method.GetParameters().Select(parameter => parameter.ParameterType.ToString()).ToArray();
+                parameters = method.GetParameters().Select(parameter => "" + parameter.ParameterType.Name.ToString() + " " + parameter.Name).ToArray();
                 methods.Add(new Method(attributes, returnType, name, parameters));
             }
 
