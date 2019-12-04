@@ -4,20 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestAssembly
+namespace namespace1
 {
     public class Class1
     {
         // variables
-        private int field;
-        public int Property1 { set; get; }
+        public int Property1 { get; set; }
+        public int Property2 { get; private set; }
 
 
 
         // methods
-        public string RturnStringMethods(int x = 1)
+        public string Method1()
         {
-            field = x;
             return "Class1";
         }
 
