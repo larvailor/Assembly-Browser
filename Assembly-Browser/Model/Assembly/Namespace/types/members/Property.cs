@@ -38,7 +38,7 @@ namespace Model.Assembly.Namespace.Types.Members
                 result += " { " + SetMethod + " } ";
             }
 
-            return result;
+            return "PROPERTY:   " + result;
         }
     }
 }

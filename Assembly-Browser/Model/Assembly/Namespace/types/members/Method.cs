@@ -29,7 +29,7 @@ namespace Model.Assembly.Namespace.Types.Members
 
         public override string ToString()
         {
-            return Attributes + " " + ReturnType + " " + Name + "(" + String.Join(", ", Parameters) + ")";
+            return "METHOD:   " + Attributes + " " + ReturnType + " " + Name + "(" + String.Join(", ", Parameters) + ")";
         }
     }
 }
