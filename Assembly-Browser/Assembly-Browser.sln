@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAssembly", "TestAssembly\TestAssembly.csproj", "{D1E883B1-9879-4F04-B0E3-8BFA4943B40B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View2", "View2\View2.csproj", "{3F74FB55-FBFB-4FD0-BC56-F133DAD287DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View2\View.csproj", "{3F74FB55-FBFB-4FD0-BC56-F133DAD287DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
