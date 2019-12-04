@@ -30,12 +30,12 @@ namespace Model.Assembly.Namespace.Types.Members
             string result = Name;
             if (GetMethod != null)
             {
-                result += "{ " + GetMethod + " get; }";
+                result += " { " + GetMethod + " } ";
             }
 
             if (SetMethod != null)
             {
-                result += "{ " + SetMethod + " set; }";
+                result += " { " + SetMethod + " } ";
             }
 
             return result;

@@ -26,7 +26,7 @@ namespace Model.Assembly.Namespace
 
         public override string ToString()
         {
-            return "NS: " + Name;
+            return Name;
         }
     }
 }

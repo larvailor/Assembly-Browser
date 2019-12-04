@@ -26,8 +26,7 @@ namespace Model.Assembly
 
         public override string ToString()
         {
-            return "Assembly " + Name;
+            return Name;
         }
-
     }
 }
